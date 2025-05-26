@@ -1,0 +1,127 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 260px;
+  height: 100vh;
+  background-color: #f9fafb;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-open {
+  left: 0;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: block;
+}
+
+.sidebar-toggle-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-toggle-button:hover {
+  background-color: #0d9488;
+}
+
+@media (min-width: 901px) {
+  .sidebar {
+    position: static;
+    width: 260px;
+    height: 100vh;
+    box-shadow: none;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .sidebar-toggle-button,
+  .sidebar-overlay {
+    display: none;
+  }
+}
+
+.nav-section {
+  margin-bottom: 40px;
+}
+
+.nav-title {
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 16px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 200ms;
+  border-right: 4px solid transparent;
+  position: relative;
+  color: #9ca3af;
+}
+
+.nav-item.active {
+  color: #374151;
+  border-right-color: #10b981;
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.nav-item:hover {
+  color: #4b5563;
+  background-color: rgba(16, 185, 129, 0.05);
+}
+
+.nav-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.setting-section {
+  margin-top: auto;
+}

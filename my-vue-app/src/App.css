@@ -1,0 +1,110 @@
+.App{
+  padding: 20px;
+   background-color: #f9fafb;
+   max-width:98%;
+   margin: auto;
+   border-radius: 20px;
+   
+}
+.main-container{
+  display: flex;
+  gap: 40px;
+
+  
+}
+.app-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar-wrapper {
+  width: 260px;
+  transition: all 0.3s ease;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hide sidebar on small screens */
+@media (max-width: 768px) {
+  .sidebar-wrapper {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .search-bar {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 6px 12px 6px 40px;
+    font-size: 13px;
+  }
+
+  .actions-section {
+    gap: 8px;
+  }
+
+  .profile-btn,
+  .add-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .icon-sm {
+    width: 14px;
+    height: 14px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar-wrapper {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+}
+@media screen and (max-width: 1024px) {
+  .main-container{
+    gap: 10px;
+  }
+  }
+  
+@media screen and (max-width: 1300px) {
+  .main-container{
+    gap: 20px;
+  }
+  }
+
+  .sidebar-wrapper {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+
+

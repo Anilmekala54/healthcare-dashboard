@@ -1,0 +1,130 @@
+.calendar-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .calendar-section {
+    padding: 10px;
+  }
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(30px, 1fr));
+  }
+  .calendar-cell {
+    padding: 6px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .calendar-section {
+    padding: 5px;
+  }
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(22px, 1fr));
+  }
+  .calendar-cell {
+    padding: 3px;
+    font-size: 0.85rem;
+  }
+ 
+}
+
+.calendar-section h3 {
+  color: #2d3748;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+ 
+ 
+}
+
+.calendar-row {
+  display: contents;
+}
+
+.calendar-cell {
+  padding: 10px;
+
+  text-align: center;
+}
+
+.header .calendar-cell {
+  font-weight: 600;
+  padding: 8px 10px;
+}
+
+.tuesday-header {
+  background-color: #ebf8ff;
+  color: #3182ce;
+}
+
+.tuesday-cell {
+  background-color: #ebf8ff;
+  position: relative;
+}
+
+.tuesday-cell:not(.header .calendar-cell)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  border-radius: 5px;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.time {
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 1180px) {
+  .calendar-section{
+    padding: 0px;
+  }
+  
+}
+@media  screen and (min-width:375px) {
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 0fr);
+    gap: 1px;
+  }
+}
+@media  screen and (min-width:320px) {
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 0fr);
+    gap: 1px;
+  }
+}
+@media  screen and (max-width:320px) {
+ .calendar-cell{
+  padding: 0px;
+ }
+}
+@media screen and (max-width: 375px) {
+  .calendar-cell {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(18px, 1fr));
+    gap: 0;
+  }
+  .calendar-cell {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+}

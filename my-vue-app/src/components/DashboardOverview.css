@@ -1,0 +1,254 @@
+.dashboard-overview {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+  .dashboard-overview {
+    padding: 30px;
+  }
+  
+}
+@media screen and (max-width:768px){
+  .dash{
+    font-size: 1rem;
+  }
+   .week {
+    font-size: 5px;
+  }
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.dashboard-header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.dashboard-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+@media (min-width: 1180px) {
+  .dashboard-cards {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.dashboard-card {
+  max-width: 60%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  width: 150%;
+  height: 120px;
+  margin: 0 auto;
+  gap: 15px;
+  align-items: center;
+}
+@media screen and (max-width:1320px) {
+  .current-appointments-container{
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width:1382px) {
+  .cards-container{
+    padding: 0px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .dashboard-cards > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+ .dashboard-overview{
+    padding: 10px;
+  }
+  
+ }
+ @media screen and (min-width: 768px) {
+  .cards-container{
+    gap: px;
+  }
+  
+ }
+  
+.lungs-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.lungs-card img,
+.lungs-card .tooth {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.cards-container p {
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.slider-lungs,
+.slider-teeth,
+.slider-bones {
+  width: 85%;
+  height: 12px;
+  background: #d1d5db;
+  border-radius: 5px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.slider-lungs::-webkit-slider-thumb,
+.slider-teeth::-webkit-slider-thumb,
+.slider-bones::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #10b981;
+  border-radius: 50%;
+  cursor: grab;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slider-lungs::-moz-range-thumb,
+.slider-teeth::-moz-range-thumb,
+.slider-bones::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #10b981;
+  border-radius: 50%;
+  cursor: grab;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+ 
+}
+@media screen and (max-width:1446px) {
+  .cards-container{
+    width: 120%;
+  }
+}
+@media screen and (max-width:1321px) {
+  .cards-container{
+    width: 110%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width:1280px) {
+  .cards-container{
+    width: 100%;
+    height: auto;
+  }
+}
+@media  screen and (max-width:320px){
+   .current-appointments-container{
+    display: flex
+;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+ .dashboard-header h2 , .dashboard-header p{
+  font-size: 10px;
+}
+}
+@media screen and (max-width:375px) {
+    .current-appointments-container{
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+  @media screen and (max-width:768px) {
+   .current-appointments-container{
+             max-width: 97%;
+        margin: auto;
+        display: flex
+;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+  }
+  
+  .activity-header{
+  display: flex;
+  justify-content: space-between; 
+
+  }
+  .activity-description{
+    color: #9ca3af;
+  }
+@media  screen and (max-width:1330px){
+  .dashboard-card{
+    height: 95%;
+
+} 
+  
+}
+@media screen and (max-width:1316px){
+  .dash,.activity-title,.activity-description{
+    font-size:10px
+  }
+  
+}
